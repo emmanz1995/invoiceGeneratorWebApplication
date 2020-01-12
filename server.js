@@ -37,6 +37,10 @@ app.use('/api/updateinvoice',require('./routes/update.js'));
 
 app.use('/api/deleteinvoice',require('./routes/delete.js'));
 
+app.get('/hello', (request, response)=>{
+    response.sendFile(path.join(__dirname, 'dist/invoice.html'));
+});
+
 app.use('*', (request , response)=>{
     response.send("<h1>ERROR 404 : Page not found</h1>");
 });
