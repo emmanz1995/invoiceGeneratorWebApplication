@@ -37,7 +37,7 @@ app.use('/api/updateinvoice',require('./routes/update.js'));
 
 app.use('/api/deleteinvoice',require('./routes/delete.js'));
 
-app.get('/hello', (request, response)=>{
+app.get('*', (request, response)=>{
     response.sendFile(path.join(__dirname, 'dist/invoice.html'));
 });
 
