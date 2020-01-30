@@ -1,6 +1,7 @@
 import React from 'react';
 import LoadHomepage from './LoadHomepage';
 import LoadCreateInvoice from './LoadCreateInvoice';
+import LoadUpdateInvoice from './LoadUpdateInvoice';
 import LoadDisplayInvoice from './LoadDisplayInvoice';
 import LoadAllInvoice from './LoadAllInvoice';
 import LoadPageNotFound from './LoadPageNotFound';
